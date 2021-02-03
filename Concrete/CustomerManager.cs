@@ -21,11 +21,11 @@ namespace GameProject.Concrete
      
 
 
-        public override void Save(Customer customer)
+        public override void Validation(Customer customer)
         {
             if (_customerCheckService.CheckIfRealPerson(customer))
             {
-                 base.Save(customer);
+                 base.Validation(customer);
             }
             else
             {
@@ -33,6 +33,7 @@ namespace GameProject.Concrete
             }
           
         }
+
 
        
 

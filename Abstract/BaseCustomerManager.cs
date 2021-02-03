@@ -5,11 +5,12 @@ using System.Text;
 
 namespace GameProject.Abstract
 {
-    public  class BaseCustomerManager : ICustomerService
+    public abstract class BaseCustomerManager : ICustomerService
     {
-        public void Add(Customer customer)
+        public void SignIn(Customer customer)
         {
             Console.WriteLine("CUSTOMER"+customer.FirstName+ "REGISTERED");
+
         }
 
         public void Delete(Customer customer)
@@ -20,10 +21,10 @@ namespace GameProject.Abstract
         {
             Console.WriteLine("CUSTOMER" + customer.FirstName + "UPDATED");
         }
-        public virtual void Save(Customer customer)
+        public virtual void Validation(Customer customer)
 
         {
-            Console.WriteLine("SAVED TO DB AND ENTERED THE SYSTEM :"+customer.FirstName);
+            Console.WriteLine("SAVED TO DB AND CAN ENTER THE SYSTEM :"+customer.FirstName);
         }
     }
 }

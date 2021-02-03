@@ -7,9 +7,9 @@ namespace GameProject.Abstract
 {
     public interface ICustomerService
     {
-        void Add(Customer customer);//registration
+        void SignIn(Customer customer);//registration
         void Delete(Customer customer);
         void Update(Customer customer);
-        void Save(Customer customer);
+        void Validation(Customer customer);
     }
 }

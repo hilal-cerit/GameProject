@@ -10,9 +10,9 @@ namespace GameProject
     {
         static void Main(string[] args)
         {
-            Customer customer1 = new Customer { YearOfBirth = 2001, FirstName = "HİLAL", LastName = "CERİT", NationalityId = 12748271888 };
+            Customer customer1 = new Customer { YearOfBirth = 2000, FirstName = "HİLAL", LastName = "CERİT", NationalityId = 123 };
              BaseCustomerManager customerManager = new CustomerManager(new MernisServiceAdapter());
-             customerManager.Save(customer1);
+             customerManager.Validation(customer1);
 
             Game game1 = new Game();
             game1.ProductName = "CS:GO";
