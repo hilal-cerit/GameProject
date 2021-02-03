@@ -8,8 +8,8 @@ namespace GameProject.Abstract
     public abstract class BaseCustomerManager : ICustomerService
     {
         public void SignIn(Customer customer)
-        {
-            Console.WriteLine("CUSTOMER"+customer.FirstName+ "REGISTERED");
+        { 
+            Console.WriteLine("CUSTOMER "+customer.FirstName+ " SIGNED IN");
 
         }
 

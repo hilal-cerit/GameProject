@@ -24,8 +24,9 @@ namespace GameProject.Concrete
         public override void Validation(Customer customer)
         {
             if (_customerCheckService.CheckIfRealPerson(customer))
-            {
+            {    
                  base.Validation(customer);
+                  base.SignIn(customer);
             }
             else
             {
